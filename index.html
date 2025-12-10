@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian | Portfolio</title>
+
+  <!-- Tailwind -->
+  <link rel="stylesheet" href="./src/output.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/0f3934b9ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="min-h-screen bg-gray-100">
+
+<!-- ================= NAVIGATION ================= -->
+<div class="bg-sky-700 p-4 w-full fixed top-0 z-50">
+  <div class="relative">
+    <button id="barsBtn">
+      <i class="fa-solid fa-bars text-white text-xl"></i>
+    </button>
+
+    <div id="barsMenu"
+      class="hidden absolute bg-sky-700 p-5 -left-5 h-screen leading-10 w-40 text-white">
+      <a href="#" id="homeLink" class="font-semibold block">Home</a>
+      <a href="#" id="aboutLink" class="font-semibold block">About Me</a>
+      <a href="#" id="projectLink" class="font-semibold block">Projects</a>
+      <a href="#" id="contactLink" class="font-semibold block">Contact Me</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="pt-28 text-center flex items-center flex-col">
+  <h1 class="font-bold text-3xl sm:text-5xl mt-20">
+    HI THERE!
+    <span class="text-sky-700">I'M CHRISTIAN</span>
+  </h1>
+
+  <div class="rounded-full bg-gray-300 mt-6 mb-6 p-3">
+    <img
+      src="https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-174669.jpg"
+      class="rounded-full w-20 h-20 object-cover"
+    />
+  </div>
+
+  <p class="max-w-xl font-mono text-xl">
+    A web designer and developer from Nsawam Adeiso in Ghana.
+    I craft simple and meaningful web experiences.
+  </p>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="hidden pt-28 text-center mt-20 max-w-3xl mx-auto">
+  <h1 class="font-bold text-3xl sm:text-5xl">About Me</h1>
+
+  <p class="font-mono text-xl mt-10">
+    My name is Christian. I'm a passionate web developer based in Ghana.
+    I enjoy building clean, responsive, and user-friendly websites while
+    continuously learning and improving my skills.
+  </p>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="hidden pt-28 max-w-4xl mx-auto text-center">
+  <h1 class="font-bold text-3xl sm:text-5xl mb-8">Projects</h1>
+
+  <div class="grid gap-6 sm:grid-cols-2">
+    <div class="bg-white p-5 shadow rounded">
+      <h3 class="font-semibold text-xl mb-2">To-Do App</h3>
+      <p class="text-gray-600">A simple JavaScript to-do list with task completion.</p>
+    </div>
+
+    <div class="bg-white p-5 shadow rounded">
+      <h3 class="font-semibold text-xl mb-2">Calculator</h3>
+      <p class="text-gray-600">A calculator built using JavaScript & Tailwind.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="hidden pt-28 text-center max-w-xl mx-auto mt-20">
+  <h1 class="font-bold text-3xl sm:text-5xl mb-6">Contact Me</h1>
+
+  <form class="space-y-4">
+    <input type="text" placeholder="Your Name"
+      class="w-full border p-3 rounded" />
+
+    <input type="email" placeholder="Your Email"
+      class="w-full border p-3 rounded" />
+
+    <textarea placeholder="Your Message"
+      class="w-full border p-3 rounded"></textarea>
+
+    <button class="bg-sky-700 text-white px-6 py-2 max-w-7xl   p-3 rounded-md">
+      Send Message
+    </button>
+  </form>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
